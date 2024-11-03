@@ -1,0 +1,139 @@
+.subtitle.homecolor {
+    border-left-color: #e2895d;
+}
+
+.greeting {
+    font-size: larger;
+    color: #595959;
+}
+.yearly-journals {
+    display: flex;
+    justify-content: flex-start;
+}
+.journal {
+    flex-basis: 25%;
+    width: 100%;
+}
+.new-journal-img img {
+    box-shadow: 2px 2px 1px #cccccc, -1px -1px 0 #cccccc;
+}
+.new-journal-info {
+	margin: 1em;
+	margin-top: 10%;
+}
+.new-journal-type {
+	margin: 0;
+}
+.new-journal-name {
+	font-size: 2em;
+	margin: 0;
+}
+.new-journal-products-number {
+	margin: 0;
+}
+.new-journal-products {
+	list-style-type: none;
+	padding: 0;
+	padding-left: 1em;
+}
+.new-journal-anchor {
+		color: black;
+		text-decoration: none;
+}
+.new-journal-download {
+		color: black;
+		text-decoration: none;
+}
+.new-journal-download:hover {
+		background-color: rgba(0,0,0,0.1);
+}
+.journals-year {
+    color: #e2895d;
+    border-bottom: solid 2px #e2895d;
+}
+.journal-thumbnail {
+    box-shadow: 2px 2px 0px #cccccc,
+     -1px -1px 0px #cccccc;
+}
+.past-journal-anchor {
+		display: block;
+		color: #000000;
+		text-decoration: none;
+		padding: 1em;
+}
+.past-journal-anchor:hover {
+		background-color: rgba(0,0,0,0.1);
+}
+.past-journal-type {
+		margin: 0;
+}
+.past-journal-name {
+		margin: 0;
+}
+
+.histories ul{
+    margin: 0;
+    padding: 0;
+}
+.history {
+    display: flex;
+    border-top: 1px solid #cccccc;
+    padding: 0.2em;
+}
+.history-date {
+    font-weight: bold;
+    flex-basis: 20%;
+}
+.history-text {
+    margin-left: 1em;
+    flex: 1;
+}
+
+.groups ul {
+    padding: 0;
+    padding-left: 5%;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.groups li {
+    flex: 1;
+    min-height: 2em;
+    margin: 1% 0;
+    display: flex;
+    align-items: center;
+}
+.groups a {
+    vertical-align: middle;
+    text-decoration: none;
+    margin-left: 1em;
+}
+.groups a.group{
+    font-size: 1.5em;
+    color: #ffffff;
+}
+.groups a.product{
+    font-size: 1em;
+    color: #000000;
+}
+.groups .novel {
+    background-color: #cce400;
+}
+.groups .music {
+    background-color: #7092be;
+}
+.groups .illustration {
+    background-color: #fb8a00;
+}
+.groups .game {
+    background-color: #00c796;
+}
+.groups .group:hover {
+    text-decoration: underline;
+}
+.groups .product:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}

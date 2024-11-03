@@ -1,0 +1,31 @@
+.journal-content {
+		margin: 0 auto;
+		max-width: 100%;
+}
+.journal-content img {
+		display: block;
+		width: 100%;
+		margin: 1em 0;
+		border: 1px solid #cccccc;
+}
+.subtitle.journalcolor {
+  border-left-color: #e2895d;
+}
+#journal-including-products-icon {
+  display: inline-block;
+}
+#journal-including-products-icon img {
+  height: 1.3em;
+}
+#journal-including-products-icon:hover {
+  cursor: pointer;
+}
+.journal-information {
+  padding-bottom: 1em;
+}
+#journal-including-products {
+  display: none;
+}
+.journal-including-illustrations, .journal-including-novels {
+  list-style: none;
+}

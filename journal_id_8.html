@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Journal - 奈良高専現視研</title>
+    <link rel='stylesheet' href='assets/styles/base.css' />
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon-180x180.png">　
+    <link rel="icon" type="image/png" href="../favicon/icon-192x192.png">
+    <link rel="manifest" href="../manifest.json">
+    <link rel='stylesheet' href='assets/styles/journal.css' />
+</head>
+
+<body>
+    <div id='background'>
+        <div id='topimg'>
+            <div id='big'>
+                <img src='assets/imgs/topimg.png' class='minidisplay-disable' />
+                <img src='assets/imgs/topimg_mobile.png' class='minidisplay-enable' />
+            </div>
+            <div id='small'>
+                <img src='assets/imgs/topimg_mini.png' class='minidisplay-disable' />
+                <img src='assets/imgs/topimg_mini_mobile.png' class='minidisplay-enable' />
+            </div>
+        </div>
+        <div id='container'>
+            <div class="minidisplay-enable">
+                <label for="font-size-changer">フォントサイズ</label>
+                <input type="range" min="10" max="30" value="14" id="font-size-changer" onchange="updateFontSize();" />
+            </div>
+            <nav class='pagenav'>
+                <ul>
+                    <li><a href='home.html'><img src='assets/imgs/home_icon.png' />Home</a></li>
+                    <li><a href='about.html'><img src='assets/imgs/about_icon.png' />About</a></li>
+                    <li class='dropdownlist'>
+                        <a href='group.html'><img src='assets/imgs/group_icon.png' />Group</a>
+                        <ul class='dropdownitems'>
+                            <li><a href='novel.html'>Novel</a></li>
+                            <li><a href='music.html'>Music</a></li>
+                            <li><a href='illustration.html'>Illustration</a></li>
+                            <li><a href='game.html'>Game</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='contact.html'><img src='assets/imgs/contact_icon.png' />Contact</a></li>
+                </ul>
+            </nav>
+            <div id='colorblock'><img src='assets/imgs/blocks.png' /></div>
+            <h2 class="subtitle journalcolor">Alchemy</h2>
+
+            <div class="journal-information">
+                <span class="journal-type">2015年春季会誌</span>
+                <div id="journal-including-products-icon">
+                    <img src="assets/imgs/comment.png" alt="description" />
+                </div>
+            </div>
+
+            <div id="journal-including-products"> </div>
+
+            <div class='journal-download'>
+                <a href='journals/5708f9916f982/journal.pdf' class='download-button' download>Download</a>
+            </div>
+            <div class='journal-content' id='content'>
+                <iframe class="slide" src="journals/5708f9916f982/journal.pdf" width="100%" height="1000px"></iframe>
+                </a>
+            </div>
+            <div id="footer">
+                <a href="admin/index.php" target="_blank">管理ページヘ</a>
+            </div>
+        </div>
+        <script src='assets/js/jquery-2.2.1.min.js'></script>
+        <script>
+            $(function () {
+                $("#journal-including-products-icon").click(function () {
+                    var x = $("#journal-including-products");
+                    if (x.is(":visible")) {
+                        x.slideUp(500);
+                    } else {
+                        x.slideDown(500);
+                    }
+                });
+            })
+        </script>
+        <script>
+            function updateFontSize() {
+                var size = $("#font-size-changer").val();
+                $("html").css({ fontSize: size + "px" });
+            }
+
+            $(function () {
+                $('#topimg').click(function () {
+                    if ($('#big').is(':visible')) {
+                        $('#big').slideUp(500);
+                        $('#small').delay(500).slideDown(500);
+                    } else {
+                        $('#small').slideUp(500);
+                        $('#big').delay(500).slideDown(500);
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>
