@@ -1,5 +1,5 @@
 ---
 layout: redirected
 sitemap: false
-redirect_to: "../home.html"
+redirect_to: "home.html"
 ---
